@@ -1,0 +1,83 @@
+<!-- Transposition Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>E.C.T. Transposition Cipher Page</title>
+		<link href="style.css" rel="stylesheet">
+		<meta charset="utf-8">
+	</head>
+	
+	<body> 
+		<div id="wrap">
+		<div id="header_text">
+		<p>Encryption Cipher Toolset<p>
+		</div>
+		<header>
+		</header>
+		
+		<nav>
+			<a href="index.html">Home &nbsp;</a>
+			<a href="simple.html">Simple Substitution &nbsp;</a>
+			<a href="transposition.html">Transposition &nbsp;</a>
+			<a href="caesar.html">Caesar &nbsp;</a>
+			<a href="vertical.html">Vertical &nbsp;</a>
+			<a href="autokey.html">Autokey &nbsp;</a>
+			<br>
+			<a href="letter_number.html">Letter-Number &nbsp;</a>
+			<a href="reverse.html">Reverse &nbsp;</a>
+			<a href="template.html">Custom Cipher Template &nbsp;</a>
+			<a href="example.html">Custom Cipher Example &nbsp;</a>
+			<br>
+			<a href="credits.html">Project Information and Sources &nbsp;</a>
+		</nav>
+		
+		<h1>The Columnar Transposition Cipher</h1>
+		
+		<main>
+		<p>
+		Description: The Transposition Cipher has a number of different versions. The version included in this Toolset is the Columnar Transposition Cipher. 
+		In this cipher the plaintext is reordered by the parameters of a key. A key is created by selecting an order of integers. The plaintext is rewritten from left to right and top to bottom
+		below those integers using the length of the integers as the amount of columns.
+
+		Example: plaintext = GEORGIA, key = 312
+		<br>
+		<br>
+ 		312
+		<br>
+ 		GEO
+		<br>
+ 		RGI
+		<br>
+ 		A
+		<br>
+		<br>
+		For Encryption the sequence of characters is reordered by the using the lowest value integer's column of characters as the beginning of the ciphertext.
+		Then the next lowest value integer's column of characters is added to the ciphertext, and so on until the highest value integer's column of characters is finished.
+		<br>
+		<br>
+		Ciphertext for the example above will read as such (Column 1:EG) + (column 2: OI) + (column 3: GRA). Final Ciphertext reads as EGOIGRA
+		</p>
+		<br>
+		<img src="images/trans_command_line.jpg" alt="Columnar Transposition Function Operating in Python" width="800" height="150">
+		<br>
+		<br>
+		<h2>Columnar Transposition Cipher Function Instructions:</h2>
+		<ol>
+			<li>Open the file in PyCharm.</li>
+			<li>Right-Click anywhere on the code window and a pop-up menu will open.</li>
+			<li>Locate the "Run 'file name'" option and click it.</li>
+			<li>Locate the 'Run' section at the bottom of the Pycharm Application. Here you will follow the input instructions as they appear and type your input when prompted to.</li>
+			<li>Input your Plaintext. Hit Enter.</li>
+			<li>Create your key by inputing an integer sequence.</li>
+			<li>Look for the printed Ciphertext Output.</li>
+			<li>To encrypt again keep the Pycharm Application open and start again on step 2.</li>
+		</ol>
+		<br>
+		</main>
+		<footer>
+			Encryption Cipher Toolset &nbsp; Senior Capstone Project - IT 4530 &nbsp; Fall 2021 &nbsp; Georgia Southern &nbsp; cartercryptography.com<br> 
+			Copyright &copy;  John Carter
+		</footer>
+		</div>
+	</body>

@@ -1,0 +1,80 @@
+<!-- Vertical Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>E.C.T. Vertical Cipher Page</title>
+		<link href="style.css" rel="stylesheet">
+		<meta charset="utf-8">
+	</head>
+	
+	<body> 
+		<div id="wrap">
+		<div id="header_text">
+		<p>Encryption Cipher Toolset<p>
+		</div>
+		<header>
+		</header>
+		
+		<nav>
+			<a href="index.html">Home &nbsp;</a>
+			<a href="simple.html">Simple Substitution &nbsp;</a>
+			<a href="transposition.html">Transposition &nbsp;</a>
+			<a href="caesar.html">Caesar &nbsp;</a>
+			<a href="vertical.html">Vertical &nbsp;</a>
+			<a href="autokey.html">Autokey &nbsp;</a>
+			<br>
+			<a href="letter_number.html">Letter-Number &nbsp;</a>
+			<a href="reverse.html">Reverse &nbsp;</a>
+			<a href="template.html">Custom Cipher Template &nbsp;</a>
+			<a href="example.html">Custom Cipher Example &nbsp;</a>
+			<br>
+			<a href="credits.html">Project Information and Sources &nbsp;</a>
+		</nav>
+		
+		<h1>The Vertical Cipher</h1>
+		<main>
+		<p>
+		Description: The vertical cipher is characterized by the rearranging of a string of characters into a set amount of rows, which are then organized by the first letter being first letter of the first row,
+		the second letter being the first letter of the second row, and so on for how many rows there are. When you have reached the end of the first letter for each row, the message is then 
+		further encrypted by repeating the same process but this time for the second of the first row, until the string has run out of characters. 
+		<br>
+		<br>
+		For example if the message "ENCRYPTION" was encrypted into 3 rows of characters,
+		the Ciphertext would appear as such, [ERTN] [NYI] [CPO]. Structured vertically the ciphertext would appear as
+		<br>
+		<br>
+		[ERTN]
+		<br>
+		[NYI]
+		<br>
+		[CPO]
+		<br>
+		<br>
+		If you read the first column top to bottom, then the subsequent columns, also top to bottom, the ciphertext would be legible almost as plaintext would.
+		Technically, the vertical cipher does not have to appear vertically however when the rows are alligned vertically by reading the rows top to bottom and 
+		left to right, you can read the message with relative ease.
+		</p>
+		<br>
+		<img src="images/vertical_command_line.jpg" alt="Vertical Cipher Function Operating in Python" width="1100" height="250">
+		<br>
+		<br>
+		<h2>Vertical Cipher Function Instructions:</h2>
+		<ol>
+			<li>Open the file in PyCharm.</li>
+			<li>Right-Click anywhere on the code window and a pop-up menu will open.</li>
+			<li>Locate the "Run 'file name'" option and click it.</li>
+			<li>Locate the 'Run' section at the bottom of the Pycharm Application. Here you will follow the input instructions as they appear and type your input when prompted to.</li>
+			<li>Input your Plaintext. Hit Enter.</li>
+			<li>Input your key as an intger, specifying the amount of rows the ciphertext will be grouped in. Hit Enter.</li>
+			<li>Look for the printed Ciphertext Output.</li>
+			<li>To encrypt again keep the Pycharm Application open and start again on step 2.</li>
+		</ol>
+		<br>
+		</main>
+		<footer>
+			Encryption Cipher Toolset &nbsp; Senior Capstone Project - IT 4530 &nbsp; Fall 2021 &nbsp; Georgia Southern &nbsp; cartercryptography.com<br>
+			Copyright &copy;  John Carter
+		</footer>
+		</div>
+	</body>

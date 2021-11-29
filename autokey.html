@@ -1,0 +1,81 @@
+<!-- Autokey Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>E.C.T. Autokey Page</title>
+		<link href="style.css" rel="stylesheet">
+		<meta charset="utf-8">
+	</head>
+	
+	<body> 
+		<div id="wrap">
+		<div id="header_text">
+		<p>Encryption Cipher Toolset<p>
+		</div>
+		<header>
+		</header>
+		
+		<nav>
+			<a href="index.html">Home &nbsp;</a>
+			<a href="simple.html">Simple Substitution &nbsp;</a>
+			<a href="transposition.html">Transposition &nbsp;</a>
+			<a href="caesar.html">Caesar &nbsp;</a>
+			<a href="vertical.html">Vertical &nbsp;</a>
+			<a href="autokey.html">Autokey &nbsp;</a>
+			<br>
+			<a href="letter_number.html">Letter-Number &nbsp;</a>
+			<a href="reverse.html">Reverse &nbsp;</a>
+			<a href="template.html">Custom Cipher Template &nbsp;</a>
+			<a href="example.html">Custom Cipher Example &nbsp;</a>
+			<br>
+			<a href="credits.html">Project Information and Sources &nbsp;</a>
+		</nav>
+		
+		<h1>The Autokey Cipher</h1>
+		
+		<main>
+		
+		<p>
+		Description: In the Autokey Cipher the key is created by a combination of a keyword and the plaintext itself. First the key word is written above the plaintext.
+		Next start writing the plaintext next to the keyword until you have reached the same amount of characters as the plaintext and stop. This phrase is now our key.
+		Example: keyword is 'john' and our plaintext is 'plaintext'.
+		<br>
+		<br>
+		johnplain (9 total characters)
+		<br>
+		plaintext (9 total Characters)
+		<br>
+		<br>
+		The key is 'johnplain'.
+		<br>
+		The Encryption process uses the Vigenere square (pictured below, credit: Research Gate). The first letter of our plaintext in the example is 'p', the first letter of the key is 'j'.
+		Following the Vigenere square, Along the horizontal legend (very first row at the top of the square), we locate the plaintext 'p', next we move down along that column and stop at the
+		vertical legend's (very first column to the left of the square), corresponding key value 'j'. The intersection of the 'p' row and the 'j' column is the letter 'y'. This is our first 
+		Ciphertext value. Repeat this process until the plaintext has been fully encrypted by the key into ciphertext.
+		</p>
+		<br>
+		<img src="images/vig_square.png" alt="Autokey Cipher Function Operating in Python" width="600" height="600">
+		<br>
+		<br>
+		<img src="images/autokey_command_line.jpg" alt="Autokey Cipher Function Operating in Python" width="1200" height="300">
+		<br>
+		<br>
+		<h2>Vertical Cipher Function Instructions:</h2>
+		<ol>
+			<li>Open the file in PyCharm.</li>
+			<li>Right-Click anywhere on the code window and a pop-up menu will open.</li>
+			<li>Locate the "Run 'file name'" option and click it.</li>
+			<li>Locate the 'Run' section at the bottom of the Pycharm Application. Here you will follow the input instructions as they appear and type your input when prompted to.</li>
+			<li>Input your Plaintext. Hit Enter.</li>
+			<li>Input your key. Hit Enter.</li>
+			<li>Look for the printed Ciphertext Output.</li>
+			<li>To encrypt again keep the Pycharm Application open and start again on step 2.</li>
+		</ol>
+		</main>
+		<footer>
+			Encryption Cipher Toolset &nbsp; Senior Capstone Project - IT 4530 &nbsp; Fall 2021 &nbsp; Georgia Southern &nbsp; cartercryptography.com<br>
+			Copyright &copy;  John Carter
+		</footer>
+		</div>
+	</body>

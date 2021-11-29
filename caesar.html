@@ -1,0 +1,79 @@
+<!-- Caesar Page -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>E.C.T. Caesar Cipher Page</title>
+		<link href="style.css" rel="stylesheet">
+		<meta charset="utf-8">
+	</head>
+	
+	<body> 
+		<div id="wrap">
+		<div id="header_text">
+		<p>Encryption Cipher Toolset<p>
+		</div>
+		<header>
+		</header>
+		
+		<nav>
+			<a href="index.html">Home &nbsp;</a>
+			<a href="simple.html">Simple Substitution &nbsp;</a>
+			<a href="transposition.html">Transposition &nbsp;</a>
+			<a href="caesar.html">Caesar &nbsp;</a>
+			<a href="vertical.html">Vertical &nbsp;</a>
+			<a href="autokey.html">Autokey &nbsp;</a>
+			<br>
+			<a href="letter_number.html">Letter-Number &nbsp;</a>
+			<a href="reverse.html">Reverse &nbsp;</a>
+			<a href="template.html">Custom Cipher Template &nbsp;</a>
+			<a href="example.html">Custom Cipher Example &nbsp;</a>
+			<br>
+			<a href="credits.html">Project Information and Sources &nbsp;</a>
+		</nav>
+		
+		<h1>The Caesar Cipher</h1>
+		
+		<main>
+		<p>
+		Description: The Caesar Cipher is a famous version of the shift cipher by substituting a particular alpahbetical letter with another further along in the alphabet by a set 
+		amount of characters. For example if you set your shift to 2, A would encrypt two letters to the right in the alphabet and appear as C in the 
+		ciphertext, B would encrypt to D, and so on. To decipher you take the original key, in this case a shift to the right of 2 and reverse it by shifting left 2 or mathematically shifting -2,
+		so a ciphertext C would shift backwards to a plaintext A and so on.
+		</p>
+		<br>
+		<p>
+		Formula: The mathematical formula for the caesar cipher is: e = (x + n) % 26. This forumla allows a shift to occur while always remaing between the values 0-25, a-z, respectively.
+		</p>
+		<ul>
+		<li>Variable e = value of the encrypted letter resulted from the Caesar shift</li>
+		<li>Variable x = value of plaintext letter</li>
+		<li>Variable n = number of numeric shifts to the right x must go in order to achieve the desired Caesar shift, (Presuming n is added to x. Use (x-n) to shift to the left or to decrypt a previous right shift.)</li>
+		</ul>
+		<br>
+		<img src="images/caesar_command_line_E.jpg" alt="Caesar Cipher Encryption Function Operating in Python" width="1300" height="250">
+		<br>
+		<br>
+		<img src="images/caesar_command_line_D.jpg" alt="Caesar Cipher Decryption Function Operating in Python" width="1300" height="250">
+		<br>
+		<br>
+		<h2>Caesar Shift Cipher Function Instructions:</h2>
+		<ol>
+			<li>Open the file in PyCharm.</li>
+			<li>Right-Click anywhere on the code window and a pop-up menu will open.</li>
+			<li>Locate the "Run 'file name'" option and click it.</li>
+			<li>Locate the 'Run' section at the bottom of the Pycharm Application. Here you will follow the input instructions as they appear and type your input when prompted to.</li>
+			<li>Input your Plaintext. Hit Enter.</li>
+			<li>Create your Caesar Shift Key by inputing a positive integer to shift right and a negative integer to shift left. Hit Enter. 
+			(You can also decrypt a message by shifting the opposite amount of what it was encrypted by)</li>
+			<li>Look for the printed Ciphertext Output.</li>
+			<li>To encrypt again keep the Pycharm Application open and start again on step 2.</li>
+		</ol>
+		<br>
+		</main>
+		<footer>
+			Encryption Cipher Toolset &nbsp; Senior Capstone Project - IT 4530 &nbsp; Fall 2021 &nbsp; Georgia Southern &nbsp; cartercryptography.com<br>
+			Copyright &copy;  John Carter
+		</footer>
+		</div>
+	</body>

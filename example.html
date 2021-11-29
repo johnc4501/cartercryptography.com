@@ -1,0 +1,68 @@
+<!-- Example Cipher Page (comes after custom cipher page) -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>E.C.T. Transposition Cipher Page</title>
+		<link href="style.css" rel="stylesheet">
+		<meta charset="utf-8">
+	</head>
+	
+	<body> 
+		<div id="wrap">
+		<div id="header_text">
+		<p>Encryption Cipher Toolset<p>
+		</div>
+		<header>
+		</header>
+		
+		<nav>
+			<a href="index.html">Home &nbsp;</a>
+			<a href="simple.html">Simple Substitution &nbsp;</a>
+			<a href="transposition.html">Transposition &nbsp;</a>
+			<a href="caesar.html">Caesar &nbsp;</a>
+			<a href="vertical.html">Vertical &nbsp;</a>
+			<a href="autokey.html">Autokey &nbsp;</a>
+			<br>
+			<a href="letter_number.html">Letter-Number &nbsp;</a>
+			<a href="reverse.html">Reverse &nbsp;</a>
+			<a href="template.html">Custom Cipher Template &nbsp;</a>
+			<a href="example.html">Custom Cipher Example &nbsp;</a>
+			<br>
+			<a href="credits.html">Project Information and Sources &nbsp;</a>
+		</nav>
+		
+		<h1>"Build your Own Custom Cipher" Example</h1>
+		
+		<main>
+		<p>
+		Description: 
+		<br>
+		<br>
+		<p>For a description of the custom cipher template please see the link to that page in the navigation above. The formula I chose for this example uses my birthday, 6/11/1999, as the numbers involved. 
+		I created a formula that shifts the ASCII unicode values of the letters (6 multiplied by 11) times to the right, and then shifts another 19 times to the right, and then shifts 99 spaces to the left.
+		The formula for this shift is ( (6*11) + 19 - 99 ). This produces the value -14 which means the plaintext characters will shift 14 spaces to the left in the alphabet.
+		Since we only need to change the 'custom_Shift_Formula = round()' line of code, the code in the example function python file is written as 'custom_Shift_Formula = round((6*11) + 19 - 99)'.
+		</p>
+		<br>
+		<img src="images/example_command_line.jpg" alt="Example Created with Cipher Template Function Operating in Python" width="800" height="200">
+		<br>
+		<br>
+		<h2>Example created with Cipher Template Function Instructions:</h2>
+		<ol>
+			<li>Open the file in PyCharm.</li>
+			<li>Right-Click anywhere on the code window and a pop-up menu will open.</li>
+			<li>Locate the "Run 'file name'" option and click it.</li>
+			<li>Locate the 'Run' section at the bottom of the Pycharm Application. Here you will follow the input instructions as they appear and type your input when prompted to.</li>
+			<li>Input your Plaintext. Hit Enter.</li>
+			<li>Look for the printed Ciphertext Output.</li>
+			<li>To encrypt again keep the Pycharm Application open and start again on step 2.</li>
+		</ol>
+		<br>
+		</main>
+		<footer>
+			Encryption Cipher Toolset &nbsp; Senior Capstone Project - IT 4530 &nbsp; Fall 2021 &nbsp; Georgia Southern &nbsp; cartercryptography.com<br>
+			Copyright &copy;  John Carter
+		</footer>
+		</div>
+	</body>
